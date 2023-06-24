@@ -27,8 +27,8 @@ public class AuthenticationController {
 
     }
 
-    @GetMapping("/shiraz")
-    public ResponseEntity<String> sayHello(){
-        return ResponseEntity.ok("hello from secured endpoint");
-    }
+//    @GetMapping("/shiraz")
+//    public ResponseEntity<String> sayHello(){
+//        return ResponseEntity.ok("hello from secured endpoint");
+//    }
 }

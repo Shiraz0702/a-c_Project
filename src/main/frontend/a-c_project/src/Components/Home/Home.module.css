@@ -1,0 +1,8 @@
+.main_layout{
+    width: 100%;
+    background-image: url("main_LA.jpg");
+    height: 700px;
+    background-position: center;
+    background-size: cover;
+    display: grid;
+}

@@ -1,0 +1,13 @@
+.sr_registration_row{
+    width: 450px;
+    height: 600px;
+    border-radius: 10px;
+    color: #e3dcdc;
+    background-color: #cfe2ff;
+    box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.2);
+    float: right;
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

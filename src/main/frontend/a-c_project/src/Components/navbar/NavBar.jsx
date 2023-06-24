@@ -1,6 +1,6 @@
 import React from 'react';
 import {useNavigate} from "react-router-dom";
-import AuthService from "../../services/auth.service";
+import AuthService from "../../services/AuthService";
 
 const NavBar = () => {
     const navigate = useNavigate()
@@ -12,7 +12,7 @@ const NavBar = () => {
 
     return (
         <div>
-            <nav className="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+            <nav className="navbar navbar-expand-lg navbar-dark bg-dark py-3 fixed-top">
                 <div className="container">
                     <a className="navbar-brand" href="/Users/shira/IdeaProjects/a-c_project/src/main/frontend/a-c_project/public/index.html">A/C</a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -27,12 +27,6 @@ const NavBar = () => {
                                     <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
                                         <li className="nav-item">
                                             <a className="nav-link active" aria-current="page" href={"/home"}>Home</a>
-                                        </li>
-                                        <li className="nav-item">
-                                            <a className="nav-link" href={"/services"}>Services</a>
-                                        </li>
-                                        <li className="nav-item">
-                                            <a className="nav-link" href="/about">About</a>
                                         </li>
                                         <li className="nav-item">
                                             <a className="nav-link" href="/contact">Contact</a>

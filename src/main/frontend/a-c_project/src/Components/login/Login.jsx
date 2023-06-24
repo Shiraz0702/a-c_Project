@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import './Login.css';
 import log from '../ac.png'
-import AuthService from "../../services/auth.service";
+import AuthService from "../../services/AuthService";
 import { useLocation, useNavigate} from "react-router-dom";
 import {useAuth} from "../auth/Auth";
 
@@ -46,9 +46,9 @@ const Login = () => {
     return (
         <div className={"wrapper"}>
             <div className={"container main"}>
-                <div className={"row"}>
+                <div className={"login_row row"}>
                     <div className={"col-md-6 side-image"}>
-                        <img src={log} alt={""}/>
+                        <img src={log} alt={""} className={"img"}/>
                     </div>
                     <div className={"col-md-6 right"}>
                         <form onSubmit={handleLogin}>
